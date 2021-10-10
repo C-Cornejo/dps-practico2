@@ -15,12 +15,12 @@ const Tab = createBottomTabNavigator();
 export default function Navigation(){
     return(
     <Tab.Navigator initialRouteName='Suma' >
-        <Tab.Screen name="Home"             component={Home} />
-        <Tab.Screen name="Suma"             component={Suma} />
-        <Tab.Screen name="Resta"            component={Resta} />
-        <Tab.Screen name="Multiplicacion"   component={Multiplicacion} />
-        <Tab.Screen name="division"         component={Division} />
-        <Tab.Screen name="factorial"        component={Factorial} />
+        <Tab.Screen name="Home"             component={      Home        } />
+        <Tab.Screen name="Suma"             component={      Suma        } />
+        <Tab.Screen name="Resta"            component={      Resta       } />
+        <Tab.Screen name="Multiplicacion"   component={  Multiplicacion  } />
+        <Tab.Screen name="division"         component={    Division      } />
+        <Tab.Screen name="factorial"        component={    Factorial     } />
     </Tab.Navigator>        
         );
 }
