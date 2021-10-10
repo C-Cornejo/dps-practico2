@@ -14,7 +14,7 @@ const Tab = createBottomTabNavigator();
 
 export default function Navigation(){
     return(
-    <Tab.Navigator>
+    <Tab.Navigator initialRouteName='Suma' >
         <Tab.Screen name="Home"             component={Home} />
         <Tab.Screen name="Suma"             component={Suma} />
         <Tab.Screen name="Resta"            component={Resta} />
