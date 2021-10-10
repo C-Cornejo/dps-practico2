@@ -74,7 +74,7 @@ export default function Navigation(){
                         tabBarLabel: 'Multiplicacion',
                         tabBarIcon:
                         ({color,size})=>(
-                        <Icon name='close-outline' color={color} size={45} />
+                        <Icon name='window-close' color={color} size={45} />
                         ),
                     }}/>
         <Tab.Screen name="Division"         
