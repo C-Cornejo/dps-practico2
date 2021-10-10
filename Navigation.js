@@ -20,8 +20,23 @@ export default function Navigation(){
                        tabBarActiveTintColor: colores.ENFASIS_COLOR,
                        tabBarStyle:
                             {
-                                backgroundColor: colores.BG_COLOR
-                            }
+                                backgroundColor: colores.BG_COLOR,
+                                height:80,
+                            },
+                        tabBarIcon:
+                            {
+                                size:45
+                            },
+                        headerTitleStyle:{
+                                color: colores.PRIMARY_COLOR,
+                                fontSize: 34,
+                                marginLeft: 15
+                            },
+                        headerStyle:
+                        {
+                            backgroundColor: colores.BG_COLOR,
+                        },
+                        tabBarShowLabel: false
                        }} > 
         <Tab.Screen name="Home"             
                     component={Home} 
@@ -29,7 +44,7 @@ export default function Navigation(){
                         tabBarLabel: 'Home',
                         tabBarIcon:
                         ({color,size})=>(
-                            <Icon name='home' color={color} size={size} />
+                        <Icon name='home' color={color} size={45} />
                         ),
                     }}
         />
@@ -39,41 +54,44 @@ export default function Navigation(){
                         tabBarLabel: 'Suma',
                         tabBarIcon:
                         ({color,size})=>(
-                            <Icon name='plus' color={color} size={size} />
+                            <Icon name='plus' color={color} size={45} />
                         ),
                     }}
                     />
         <Tab.Screen name="Resta"            
                     component={Resta} 
                     options={{
+                        tabBarLabel: 'Resta',
                         tabBarIcon:
                         ({color,size})=>(
-                            <Icon name='minus' color={color} size={size} />
+                            <Icon name='minus' color={color} size={45} />
                         ),
                     }}
         />
         <Tab.Screen name="Multiplicacion"   
                     component={Multiplicacion}
                      options={{
+                        tabBarLabel: 'Multiplicacion',
                         tabBarIcon:
                         ({color,size})=>(
-                        <Icon name='close-outline' color={color} size={size} />
+                        <Icon name='close-outline' color={color} size={45} />
                         ),
                     }}/>
-        <Tab.Screen name="division"         
+        <Tab.Screen name="Division"         
                     component={Division}
                     options={{
+                        tabBarLabel: 'Division',
                         tabBarIcon:
                         ({color,size})=>(
-                            <Icon name='division' color={color} size={size} />
+                            <Icon name='division' color={color} size={45} />
                         ),
                     }} />
-        <Tab.Screen name="factorial"        
+        <Tab.Screen name="Factorial"        
                     component={    Factorial     }
                     options={{
                         tabBarIcon:
                         ({color,size})=>(
-                            <Icon name='alert-box-outline' color={color} size={size} />
+                            <Icon name='alert-rhombus' color={color} size={45} />
                         ),
                     }} />
     </Tab.Navigator>        
